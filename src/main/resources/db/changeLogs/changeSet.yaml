@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - changeSet:
+      id: changetSet.yaml
+      comment: Test
+      author: Me
+      changes:
+        - createIndex:
+            collectionName: Test
+            keys: '{ "nameTerm": 1 }'
+            options: '{ "name": "nameTerm_1" }'
